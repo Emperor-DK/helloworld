@@ -1,6 +1,7 @@
+        BasicUpstart2(start)
         .encoding "petscii_upper"
-        * = $c000
-        lda #$00
+        
+start:  lda #$00
 loop:   lda htext,x
         beq done
         jsr $ffd2
@@ -8,5 +9,5 @@ loop:   lda htext,x
         jmp loop
 done:   rts
 
-htext:  .text "Hello World"
+htext:  .text "HELLO WORLD"
         .byte 0
