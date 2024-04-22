@@ -9,5 +9,5 @@ loop:   lda htext,x
         jmp loop
 done:   rts
 
-htext:  .text "HELLO WORLD"
+htext:  .text "IM NOT A DEMO CODER, BUT I KNOW A FEW OF THE TRICKS, AND ONE OF THE THINGS I CAN DO IS REVERSE ENGINEER"
         .byte 0
